@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Binary Search Tree</title>
+    <link rel="icon" href="assets/img/brs-logo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/CSS/style.css" />
+  </head>
+  <body>
+    
+    <header>
+      <div class="d-flex bg-gradient">
+        <div class="d-flex flex-grow-1">
+        
+          <div class="flex-grow-1">
+            <div class="ReactTitle ">
+              <h3>Binary Search Tree</h3>
+            </div>
+            <div class="d-flex ps-3 align-items-center">
+              <div class="flex-grow-1">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main role="main" class="container" style="margin-bottom: 100px">
+      <h4 class="text-start">
+      Binary Search Tree </h4>
+      <p class="text-start">
+        A binary search tree (BST) is a binary tree where every node in the left subtree is less than the root, and every node in the right subtree is of a value greater than the root. The properties of a binary search tree are recursive: if we consider any node as a “root,” these properties will remain true.</p>
+    
+        <p class="text-start">A binary search tree is named so because it increases the efficiency of search operation in a logarithmic tree. The illustration below explains what a binary search tree is (left) and what it is not (right).To be a binary search tree, for every node, all of the nodes in its left tree must be <= the node, and all of the nodes in its right subtree must be > the node.
+        </p>
+       
+    
+      <div class="container"></div>
+      
+       <h3>Binary Search Tree Validation</h3>
+          <div>
+              <label for="treeInput">Enter BST elements (comma separated):</label>
+              <input type="text" id="treeInput" placeholder="e.g., 5,3,7,1,4,6,8">
+              <button onclick="validateBST()">Validate</button>
+          </div>
+          <p id="validationResult"></p>
+        </main>
+
+    <footer class="footer footer-dark">
+      <div class="d-flex justify-content-center px-5">
+        <div>
+          <button
+            onclick="setTheme('#1A4B84')"
+            class="theme-switch theme-switch-chathams_blue"
+          ></button>
+          <button
+            onclick="setTheme('#991E14')"
+            class="theme-switch theme-switch-tamarillo"
+          ></button>
+          <button
+            onclick="setTheme('#FEAD06')"
+            class="theme-switch theme-switch-yellow_sea"
+          ></button>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/JS/binary tree.js"></script>
+    <script src="assets/JS/theme.js" defer></script>
+  </body>
+</html>
